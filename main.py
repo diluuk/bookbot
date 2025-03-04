@@ -1,3 +1,5 @@
+from stats import get_num_words
+
 def main():
     print("Starting main function...")
     text = get_book_text("books/frankenstein.txt")
@@ -10,10 +12,6 @@ def get_book_text(path):
         contents = f.read()
     print("File opened and read successfully.")
     return contents
-
-def get_num_words(contents):
-    words = contents.split()
-    return len(words)
 
 # Entry point
 if __name__ == "__main__":
